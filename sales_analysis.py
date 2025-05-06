@@ -63,3 +63,38 @@ print(shortest)
 
 # set the style of seaborn
 sns.set(style="whitegrid")
+
+#1 histogram of height distribution
+plt.figure(figsize=(8, 5))
+sns.histplot(df['height_inches'], bins=15, kde=True, color='blue')
+plt.title('Height Distribution')
+plt.xlabel('Height (inches)')
+plt.ylabel('Frequency')
+plt.tight_layout()
+plt.savefig('height_distribution.png')
+plt.close()
+
+#histogram of weight distribution
+plt.figure(figsize=(8, 5))
+sns.histplot(df['weight_pounds'], bins=15, kde=True, color='green')
+plt.title('Weight Distribution')
+plt.xlabel('Weight (pounds)')
+plt.ylabel('Frequency')
+plt.tight_layout()
+plt.savefig('weight_distribution.png')
+plt.close()
+
+#scatter plot of height vs weight
+plt.figure(figsize=(8, 5))
+sns.scatterplot(x='height_inches', y='weight_pounds', data=df, color='coral')
+plt.title('Height vs Weight')
+plt.xlabel('Height (inches)')
+plt.ylabel('Weight (pounds)')
+plt.tight_layout()
+plt.savefig('height_vs_weight.png')
+plt.close()
+
+
+print("\nGrapth saved as PNG files: height_distribution.png, weight_distribution.png, height_vs_weight.png")
+
+
