@@ -1,4 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
 df = pd.read_csv('sales_data.csv')
 
 # Display the first few rows of the DataFrame
@@ -56,3 +60,6 @@ print(tallest)
 shortest = df[df['height_inches'] == df['height_inches'].min()]
 print("\nShortest Person Data:")
 print(shortest)
+
+# set the style of seaborn
+sns.set(style="whitegrid")
