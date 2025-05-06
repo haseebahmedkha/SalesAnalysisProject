@@ -1,0 +1,33 @@
+# 📊 Sales Data Analysis (Python & Pandas Project)
+
+This project analyzes a dataset containing height and weight information for 200 individuals. It's a great example of how to clean, explore, and visualize data using Python, Pandas, and Matplotlib/Seaborn.
+
+## ✅ Features
+- Cleaned raw CSV data (removed quotes, spaces, and fixed column names)
+- Handled missing values
+- Calculated:
+  - Average Height
+  - Average Weight
+  - Tallest and Shortest individuals
+- Created visualizations:
+  - Height Distribution
+  - Weight Distribution
+  - Height vs Weight Scatter Plot
+
+## 📁 Files Included
+- `sales_analysis.py` – Python script for the full analysis
+- `cleaned_sales_data.csv` – Cleaned dataset
+- `height_distribution.png` – Histogram of height values
+- `weight_distribution.png` – Histogram of weight values
+- `height_vs_weight.png` – Scatter plot of height vs weight
+
+## 🛠️ Tools Used
+- Python 3.11
+- Pandas
+- Matplotlib
+- Seaborn
+
+## 📌 How to Run
+```bash
+pip install pandas matplotlib seaborn
+python sales_analysis.py
